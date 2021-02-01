@@ -1,0 +1,12 @@
+
+# STD Defines
+DDEFS += -DSTM32F10X_MD # -DHSE_VALUE=8000000
+
+# source director
+STM32F1_CORE_DIR    = $(ROOT_DIR)/3rdpart/CMSIS/CM3/CoreSupport
+STM32F1_DEVICE_DIR  = $(ROOT_DIR)/3rdpart/CMSIS/CM3/DeviceSupport/ST/STM32F10x
+
+# 使用自己写的startup,只使用寄存器定义的头文件
+INCLUDE_DIRS += $(STM32F1_CORE_DIR)
+INCLUDE_DIRS += $(STM32F1_DEVICE_DIR)
+
